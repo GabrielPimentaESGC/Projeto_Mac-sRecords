@@ -1,0 +1,81 @@
+/* Font and Typography */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+    padding: 24px 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 56px;
+    font-weight: 900;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin-right: auto;
+}
+
+.navbar-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    animation: spin 20s linear infinite;
+    flex-shrink: 0;
+}
+
+.navbar-nav .nav-link {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.08px;
+    text-transform: capitalize;
+    white-space: nowrap;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #666 !important;
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+    .navbar-brand {
+        font-size: 40px;
+        letter-spacing: -0.02em;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 16px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    .navbar-nav {
+        gap: 24px !important;
+    }
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 24px 0;
+    }
+
+    .navbar-brand {
+        font-size: 40px;
+    }
+}
